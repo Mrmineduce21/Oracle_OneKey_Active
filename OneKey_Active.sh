@@ -15,7 +15,7 @@ for loop in 1 2 3 4 5 6 7 8 9 10
 do
 sleep 2
     echo "第$loop个1GB文件"
-    wget -P /root/anti-recycling  https://hnd-jp-ping.vultr.com/vultr.com.1000MB.bin
+    wget -P /root/anti-recycling  http://wa-us-ping.vultr.com/vultr.com.1000MB.bin
      echo "第$loop个文件下载完成"    
 done
  echo "保留文件下载完成"

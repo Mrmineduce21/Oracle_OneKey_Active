@@ -59,7 +59,7 @@ fi
 #=======================  C  P  U  ===================#
 
 
-for loop2 in 1 2 3 4 5 6
+for loop2 in 1 2 
 do
 sleep 5
    if [ -f /root/unixbench.sh ]; then

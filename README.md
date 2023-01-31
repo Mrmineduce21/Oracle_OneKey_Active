@@ -38,7 +38,9 @@ eg : bash memory_usage.sh consume 1G 即消耗1G 的内存
 bash memory_usage.sh release
 
 ===============================================================================
+
 cpu_usage.sh
+
 使用之前使用命令先查询下cpu的个数
 
 cat /proc/cpuinfo | grep “processor”|wc -l

@@ -1,6 +1,21 @@
 #!/bin/bash
 
 
+
+#=======================  日  志  ===================#
+
+
+if [ -f /root/Oracle_OneKey_Active.log ]; then
+ echo "log file found..."
+
+  else
+  echo "no such file!-"
+  touch /root/Oracle_OneKey_Active.log
+fi
+time=$(date -d today +"%Y-%m-%d %T")
+echo "$time Start" >> /root/Oracle_OneKey_Active.log
+
+
 #=======================  保  留  文  件  ===================#
 
  echo "清空上次残留"
@@ -16,7 +31,10 @@ do
 sleep 2
     echo "第$loop个1GB文件"
     wget -P /root/anti-recycling  http://wa-us-ping.vultr.com/vultr.com.1000MB.bin
-     echo "第$loop个文件下载完成"    
+     echo "第$loop个文件下载完成"
+     time=$(date -d today +"%Y-%m-%d %T")
+     echo "$time Download file$loop Done" >> /root/Oracle_OneKey_Active.log
+     
 done
  echo "保留文件下载完成"
 

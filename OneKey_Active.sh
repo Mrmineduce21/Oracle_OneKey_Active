@@ -2,7 +2,8 @@
 
 
 #=======================  保  留  文  件  ===================#
- #清空上次残留
+
+ echo "清空上次残留"
  rm -rf /root/anti-recycling
 
 if [ ! -d "/anti-recycling" ]; then

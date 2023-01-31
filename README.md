@@ -2,6 +2,8 @@
 为了应对甲骨文最新回收机制而作的垃圾脚本
 
 
+
+
 脚本流程
 下载10G文件（保留）----  下载2G文件（下载后删除）----  执行 superbench   ----  执行 unixbench
 
@@ -16,5 +18,6 @@ root目录中/anti-recycling  /OneKey_Active 均为保留文件，请勿删除
 wget -qO OneKey_Active.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/OneKey_Active.sh && chmod +x OneKey_Active.sh && bash OneKey_Active.sh
 ```
 
+有bug自己修，提lssues不回
 
 

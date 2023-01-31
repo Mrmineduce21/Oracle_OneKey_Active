@@ -31,7 +31,7 @@ for loop in 1 2
 do
 sleep 2
     echo "第$loop个1GB文件"
-  #  wget -P /root/anti-recycling  http://wa-us-ping.vultr.com/vultr.com.1000MB.bin
+    wget -P /root/anti-recycling  http://wa-us-ping.vultr.com/vultr.com.1000MB.bin
    echo "下载完成"
    sleep 5
      echo "第$loop个文件下载完成"
@@ -48,7 +48,7 @@ if [ -f /root/superbench.sh ]; then
   ./superbench.sh
   else
   echo "no such file!-开始下载"
-# wget -qO- --no-check-certificate https://raw.githubusercontent.com/oooldking/script/master/superbench.sh | bash
+wget -qO- --no-check-certificate https://raw.githubusercontent.com/oooldking/script/master/superbench.sh | bash
  echo "测试完成"
    echo "superbench删除日志"
   rm /root/superbench.log
@@ -68,7 +68,7 @@ sleep 5
    else
    echo "no such file!-开始下载"
    echo "file found...执行测试"
-  # wget --no-check-certificate https://github.com/teddysun/across/raw/master/unixbench.sh && chmod +x unixbench.sh && ./unixbench.sh
+#  wget --no-check-certificate https://github.com/teddysun/across/raw/master/unixbench.sh && chmod +x unixbench.sh && ./unixbench.sh
   
 fi
      time=$(date -d today +"%Y-%m-%d %T")

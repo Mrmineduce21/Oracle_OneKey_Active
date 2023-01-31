@@ -1,6 +1,5 @@
 #!/bin/bash
-# Destription: testing memory usage 
-# Example    : sh memory_usage.sh 500M | sh memory_usage.sh 1G | sh memory_usage.sh release
+
  
 FILE_NAME=`basename $0`
 memsize=$2

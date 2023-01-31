@@ -31,7 +31,7 @@ for loop in 1 2
 do
 sleep 2
     echo "第$loop个1GB文件"
-    wget -P --limit-rate=10M /root/anti-recycling  http://wa-us-ping.vultr.com/vultr.com.1000MB.bin
+    wget -P /root/anti-recycling  http://wa-us-ping.vultr.com/vultr.com.1000MB.bin
    echo "下载完成"
    sleep 5
      echo "第$loop个文件下载完成"

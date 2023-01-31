@@ -24,4 +24,11 @@ cd /root && wget -qO OneKey_Active.sh https://raw.githubusercontent.com/Mrminedu
 
 有bug自己修，提lssues不回
 
+===============================================================================
 
+memory_usage.sh
+使用方法： 需要root 权限 启动
+bash memory_usage.sh consume 内存大小
+eg : bash memory_usage.sh consume 1G 即消耗1G 的内存
+取消内存消耗
+bash memory_usage.sh release

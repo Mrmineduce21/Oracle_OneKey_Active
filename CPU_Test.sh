@@ -62,17 +62,17 @@ fi
 for loop2 in 1 2 
 do
 sleep 5
-   if [ -f /root/unixbench.sh ]; then
-   echo "file found...执行测试"
-   ./unixbench.sh
-   else
-   echo "no such file!-开始下载"
-   echo "file found...执行测试"
-  wget --no-check-certificate https://github.com/teddysun/across/raw/master/unixbench.sh && chmod +x unixbench.sh && ./unixbench.sh
-  
+cd /root && wget -qO cpu_usage.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/cpu_usage.sh && chmod +x cpu_usage.sh && bash cpu_usage.sh consume 1
+  sleep 1800
+  cd /root && wget -qO cpu_usage.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/cpu_usage.sh && chmod +x cpu_usage.sh && bash cpu_usage.sh release
+  sleep 60 
+  cd /root && wget -qO cpu_usage.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/cpu_usage.sh && chmod +x cpu_usage.sh && bash cpu_usage.sh consume 1
+  sleep 1800
+  cd /root && wget -qO cpu_usage.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/cpu_usage.sh && chmod +x cpu_usage.sh && bash cpu_usage.sh release
+  sleep 60 
 fi
      time=$(date -d today +"%Y-%m-%d %T")
-     echo "$time unixbench $loop2 Done" >> /root/Oracle_OneKey_Active.log
+     echo "$time cpu_usage $loop2 Done" >> /root/Oracle_OneKey_Active.log
      
 done
 

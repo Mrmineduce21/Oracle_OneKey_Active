@@ -8,4 +8,11 @@
 请将脚本置于root目录执行
 root目录中/anti-recycling  /OneKey_Active 均为保留文件，请勿删除
 
+可配合宝塔面板，哪吒探针，crontab 等  实现自动运行
+
+```
+wget -qO OneKey_Active.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/OneKey_Active.sh && chmod +x OneKey_Active.sh && bash OneKey_Active.sh
+```
+
+
 

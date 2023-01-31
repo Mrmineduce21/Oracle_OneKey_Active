@@ -48,7 +48,7 @@ if [ -f /root/superbench.sh ]; then
   ./superbench.sh
   else
   echo "no such file!-开始下载"
-#wget -qO- --no-check-certificate https://raw.githubusercontent.com/oooldking/script/master/superbench.sh | bash
+# wget -qO- --no-check-certificate https://raw.githubusercontent.com/oooldking/script/master/superbench.sh | bash
  echo "测试完成"
    echo "superbench删除日志"
   rm /root/superbench.log

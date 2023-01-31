@@ -31,7 +31,9 @@ for loop in 1 2
 do
 sleep 2
     echo "第$loop个1GB文件"
-    wget -P /root/anti-recycling  http://wa-us-ping.vultr.com/vultr.com.1000MB.bin
+  #  wget -P /root/anti-recycling  http://wa-us-ping.vultr.com/vultr.com.1000MB.bin
+   echo "下载完成"
+   sleep 5
      echo "第$loop个文件下载完成"
      time=$(date -d today +"%Y-%m-%d %T")
      echo "$time Download file$loop Done" >> /root/Oracle_OneKey_Active.log
@@ -58,7 +60,7 @@ fi
 
 for loop2 in 1 2
 do
-sleep 2
+sleep 5
    if [ -f /root/unixbench.sh ]; then
    echo "file found...执行测试"
    ./unixbench.sh

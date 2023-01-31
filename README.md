@@ -25,7 +25,7 @@ cd /root && wget -qO OneKey_Active.sh https://raw.githubusercontent.com/Mrminedu
 ```
 cd /root && wget -qO CPU_Test.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/CPU_Test.sh && chmod +x CPU_Test.sh && bash CPU_Test.sh
 ```
-有bug自己修，提lssues不回
+
 
 ================================================================
 

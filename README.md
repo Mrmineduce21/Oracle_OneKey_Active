@@ -21,7 +21,7 @@ root目录中/anti-recycling  /OneKey_Active 均为保留文件，请勿删除
 ```
 cd /root && wget -qO OneKey_Active.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/OneKey_Active.sh && chmod +x OneKey_Active.sh && bash OneKey_Active.sh
 ```
-或者
+或者（适合深夜自动运行）
 ```
 cd /root && wget -qO CPU_Test.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/CPU_Test.sh && chmod +x CPU_Test.sh && bash CPU_Test.sh
 ```

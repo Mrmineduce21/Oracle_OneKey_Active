@@ -69,6 +69,17 @@ cat /proc/cpuinfo | grep “processor”|wc -l
 
 或 grep processor /proc/cpuinfo |wc -l
 
+
+一键吃掉1核心
+```
+cd /root && wget -qO cpu_usage.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/cpu_usage.sh && chmod +x cpu_usage.sh && bash cpu_usage.sh consume 1
+```
+
+取消CPU消耗
+```
+cd /root && wget -qO cpu_usage.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/cpu_usage.sh && chmod +x cpu_usage.sh && bash cpu_usage.sh release
+```
+
 需要构造消耗2颗cpu的资源运行脚本sh cpu_usage.sh consume 2，此时运行top命令查看cpu的使用率。如果要释放cpu资源
 运行sh cpu_usage.sh release即可释放cpu资源。
 

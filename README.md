@@ -36,3 +36,17 @@ eg : bash memory_usage.sh consume 1G 即消耗1G 的内存
 取消内存消耗
 
 bash memory_usage.sh release
+
+===============================================================================
+cpu_usage.sh
+使用之前使用命令先查询下cpu的个数
+
+cat /proc/cpuinfo | grep “processor”|wc -l
+
+或 grep processor /proc/cpuinfo |wc -l
+
+需要构造消耗2颗cpu的资源运行脚本sh cpu_usage.sh consume 2，此时运行top命令查看cpu的使用率。如果要释放cpu资源
+运行sh cpu_usage.sh release即可释放cpu资源。
+
+
+

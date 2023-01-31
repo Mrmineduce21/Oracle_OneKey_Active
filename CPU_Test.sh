@@ -13,6 +13,7 @@ if [ -f /root/Oracle_OneKey_Active.log ]; then
   touch /root/Oracle_OneKey_Active.log
 fi
 time=$(date -d today +"%Y-%m-%d %T")
+echo "===================" >> /root/Oracle_OneKey_Active.log
 echo "$time Start" >> /root/Oracle_OneKey_Active.log
 
 
@@ -46,19 +47,31 @@ if [ -f /root/superbench.sh ]; then
   else
   echo "no such file!-开始下载"
 wget -qO- --no-check-certificate https://raw.githubusercontent.com/oooldking/script/master/superbench.sh | bash
-   echo "删除日志"
+   echo "superbench删除日志"
   rm /root/superbench.log
+       time=$(date -d today +"%Y-%m-%d %T")
+     echo "$time superbench Done" >> /root/Oracle_OneKey_Active.log
 fi
 
 #=======================  C  P  U  ===================#
-if [ -f /root/unixbench.sh ]; then
- echo "file found...执行测试"
-  ./unixbench.sh
-  else
-  echo "no such file!-开始下载"
- wget --no-check-certificate https://github.com/teddysun/across/raw/master/unixbench.sh && chmod +x unixbench.sh && ./unixbench.sh
- # rm /root/unixbench.sh
+
+
+for loop2 in 1 2
+do
+sleep 2
+   if [ -f /root/unixbench.sh ]; then
+   echo "file found...执行测试"
+   ./unixbench.sh
+   else
+   echo "no such file!-开始下载"
+   echo "file found...执行测试"
+  # wget --no-check-certificate https://github.com/teddysun/across/raw/master/unixbench.sh && chmod +x unixbench.sh && ./unixbench.sh
+  
 fi
+     time=$(date -d today +"%Y-%m-%d %T")
+     echo "$time unixbench $loop2 Done" >> /root/Oracle_OneKey_Active.log
+     
+done
 
 
 

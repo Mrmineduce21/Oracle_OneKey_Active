@@ -19,7 +19,7 @@ root目录中/anti-recycling  /OneKey_Active 均为保留文件，请勿删除
 
 使用方法
 ```
-sudo -i && cd /root && wget -qO OneKey_Active.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/OneKey_Active.sh && chmod +x OneKey_Active.sh && bash OneKey_Active.sh
+cd /root && wget -qO OneKey_Active.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/OneKey_Active.sh && chmod +x OneKey_Active.sh && bash OneKey_Active.sh
 ```
 
 有bug自己修，提lssues不回

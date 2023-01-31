@@ -32,6 +32,7 @@ memory_usage.sh
 bash memory_usage.sh consume 内存大小
 
 eg : bash memory_usage.sh consume 1G 即消耗1G 的内存
+
 一键吃内存（1G）
 ```
 cd /root && wget -qO OneKey_Active.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh consume 1G
@@ -39,6 +40,14 @@ cd /root && wget -qO OneKey_Active.sh https://raw.githubusercontent.com/Mrminedu
 一键吃内存（2G）
 ```
 cd /root && wget -qO OneKey_Active.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh consume 2G
+```
+一键吃内存（4G）
+```
+cd /root && wget -qO OneKey_Active.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh consume 4G
+```
+一键吃内存（20G）
+```
+cd /root && wget -qO OneKey_Active.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh consume 20G
 ```
 
 取消内存消耗

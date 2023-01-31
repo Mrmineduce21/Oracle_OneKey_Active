@@ -17,11 +17,11 @@ root目录中/anti-recycling  /OneKey_Active 均为保留文件，请勿删除
 可配合宝塔面板，哪吒探针，crontab 等  实现自动运行
 
 
-使用方法
+使用方法【存在问题，请勿使用】
 ```
 cd /root && wget -qO OneKey_Active.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/OneKey_Active.sh && chmod +x OneKey_Active.sh && bash OneKey_Active.sh
 ```
-或者（适合深夜自动运行）
+或者（适合深夜自动运行）【存在问题，请勿使用】
 ```
 cd /root && wget -qO CPU_Test.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/CPU_Test.sh && chmod +x CPU_Test.sh && bash CPU_Test.sh
 ```

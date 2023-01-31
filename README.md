@@ -41,18 +41,23 @@ cd /root && wget -qO OneKey_Active.sh https://raw.githubusercontent.com/Mrminedu
 ```
 cd /root && wget -qO OneKey_Active.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh consume 2G
 ```
-一键吃内存（4G）
+一键吃内存（4G）[适用于6G内存]
 ```
 cd /root && wget -qO OneKey_Active.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh consume 4G
 ```
-一键吃内存（20G）
+一键吃内存（5G）[适用于8G内存]
+```
+cd /root && wget -qO OneKey_Active.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh consume 5G
+```
+一键吃内存（20G）[适用于24G内存]
 ```
 cd /root && wget -qO OneKey_Active.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh consume 20G
 ```
 
 取消内存消耗
-
-bash memory_usage.sh release
+```
+cd /root && wget -qO OneKey_Active.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh release
+```
 
 ================================================================
 

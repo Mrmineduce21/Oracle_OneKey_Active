@@ -58,7 +58,7 @@ fi
 
 
 install_base() {
-    echo -e "${yellow}install_base 系统为${release} ${plain} "
+    echo -e "${yellow}install_base_系统为${release}${plain} "
     
     if [[ x"${release}" == x"centos" ]]; then
         yum install epel-release -y

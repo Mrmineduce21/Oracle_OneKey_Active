@@ -113,9 +113,12 @@ FuckNetWork.sh
 原理：每间隔二十分钟下载一次大小为1G的 VULTR 测速文件（限速10MB/S） 下次下载开始前将会删除上次下载的文件
 
 一键浪费网络
-
 ```
 cd /root && wget -qO FuckNetWork.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/FuckNetWork.sh && chmod +x FuckNetWork.sh && nohup ./FuckNetWork.sh &
+```
+停止运行
+```
+FNpid=$(ps -ef | grep "FuckNetWork.sh" | grep '/bin/bash' | grep -v grep | awk '{print $2}') && kill -9 $FNpid && rm -f /root/nohup.out
 ```
 
 

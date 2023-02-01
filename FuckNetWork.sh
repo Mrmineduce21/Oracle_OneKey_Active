@@ -45,6 +45,7 @@ echo "${time} Start Download " >> /root/Oracle_OneKey_Active.log
 wget --limit-rate=10M  https://nj-us-ping.vultr.com/vultr.com.1000MB.bin  -O /root/anti-recycling/vultr.com.1000MB.bin
 
 clear
+rm -f /root/nohup.out
 echo -e " ${green} 下载完成，等待1680S(28Min)继续运行 ${plain} "
 time=$(date "+%Y-%m-%d %H:%M:%S")
 echo "${time} start wait " >> /root/Oracle_OneKey_Active.log

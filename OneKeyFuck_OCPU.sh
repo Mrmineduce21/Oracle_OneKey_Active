@@ -69,7 +69,7 @@ install_base() {
 
 echo -e "${green}开始运行${plain}"
 check
-echo -e "${green}检查环境完成${plain}"
+echo -e "${green}检查环境完成 系统为${release} ${plain}"
 install_base
 echo -e "${green}依赖安装完成${plain}"
 Fuck_OCPU

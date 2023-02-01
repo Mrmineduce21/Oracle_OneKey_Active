@@ -15,22 +15,12 @@ bash memory_usage.sh consume 内存大小
 
 eg : bash memory_usage.sh consume 1G 即消耗1G 的内存
 
-一键吃内存（1G）
-```
-cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh consume 1G
-```
+
 一键吃内存（2G）
 ```
 cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh consume 2G
 ```
-一键吃内存（4G）[适用于6G内存]
-```
-cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh consume 4G
-```
-一键吃内存（5G）[适用于8G内存]
-```
-cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh consume 5G
-```
+
 一键吃内存（20G）[适用于24G内存]
 ```
 cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh consume 20G
@@ -65,5 +55,10 @@ cd /root && wget -qO cpu_usage.sh https://raw.githubusercontent.com/Mrmineduce21
 需要构造消耗2颗cpu的资源运行脚本sh cpu_usage.sh consume 2，此时运行top命令查看cpu的使用率。如果要释放cpu资源
 运行sh cpu_usage.sh release即可释放cpu资源。
 
+================================================================
 
+Fuck_OCPU.sh
 
+运行方法  bash Fuck_OCPU.sh <cores> 
+
+需要自行安装CPUlimit

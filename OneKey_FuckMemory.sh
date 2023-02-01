@@ -46,7 +46,7 @@ install_base() {
 
 Fuck_Memory() {
 freeMem=$(free -t | awk 'NR ==2 {print $4/1024/1024/10}') && full=$((${freeMem//.*/+1})) 
-   fullG=$full$G
+   fullG=${full}$G
    echo -e "${green}当前获取到的可用内存为_${freeMem}GB ${plain}"
   
    echo -e "${green}预计填充的内存为_ ${fullG} ${plain}"

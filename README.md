@@ -14,6 +14,13 @@ OneKeyFuck_OCPU.sh
 ```
 cd /root && wget -qO OneKeyFuck_OCPU.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/OneKeyFuck_OCPU.sh && chmod +x OneKeyFuck_OCPU.sh && bash OneKeyFuck_OCPU.sh
 ```
+
+释放CPU资源
+
+```
+pid=$(ps -ef | grep "bash" | grep '/bin/bash' | grep -v grep | awk '{print $2}') && kill -9 $pid
+```
+
 当ssh终端出现  nohup: appending output to 'nohup.out'  时按回车即可
 ================================================================
 

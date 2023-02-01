@@ -105,7 +105,19 @@ cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/Mrmineduc
 ```
 cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh release
 ```
-============================================================
+
+----==================   N   E   T   W   O   R   K   =======================----
+
+FuckNetWork.sh
+
+原理：每间隔二十分钟下载一次大小为1G的 VULTR 测速文件（限速10MB/S） 下次下载开始前将会删除上次下载的文件
+
+一键浪费网络
+
+```
+cd /root && wget -qO FuckNetWork.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/FuckNetWork.sh && chmod +x FuckNetWork.sh && nohup ./FuckNetWork.sh &
+```
+
 
 
   

@@ -47,7 +47,9 @@ install_base() {
 Fuck_Memory() {
 freeMem=$(free -t | awk 'NR ==2 {print $4/1024/1024/10}') && full=$((${freeMem//.*/+1})) 
    echo -e "${green}当前获取到的可用内存为_${freeMem}GB ${plain}"
-   echo -e "${green}预计填充的内存为_ ${full}GB ${plain}"
+    fullG = ${full}G
+   echo -e "${green}预计填充的内存为_ ${fullG} ${plain}"
+  
    echo -e "${green}===============================${plain} "
    echo -e "${yellow}  脚本将自动获取系统可用内存的10%（不满1G按1G算） 并消耗掉这部分内存 ${plain} "
    echo -e "${red}  警告：Amd服务器（内存小于2G）请勿使用此脚本，对此照成的封号，机器失联，卡死等问题作者概不负责 ${plain} "
@@ -66,7 +68,7 @@ if [ -f /root/memory_usage.sh ]; then
   bash memory_usage.sh ${full}G
   else
   echo "no such file!-开始下载"
-cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh consume ${full}G
+cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh consume ${fullG}
 fi
 
 }

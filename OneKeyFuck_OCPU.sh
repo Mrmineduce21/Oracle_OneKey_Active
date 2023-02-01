@@ -56,8 +56,10 @@ fi
 
 }
 
+
 install_base() {
-    echo -e "${yellow}install_base${plain} "
+    echo -e "${yellow}install_base 系统为${release} ${plain} "
+    
     if [[ x"${release}" == x"centos" ]]; then
         yum install epel-release -y
         yum install cpulimit wget socat -y
@@ -69,7 +71,7 @@ install_base() {
 
 echo -e "${green}开始运行${plain}"
 check
-echo -e "${green}检查环境完成 系统为${release} ${plain}"
+
 install_base
 echo -e "${green}依赖安装完成${plain}"
 Fuck_OCPU

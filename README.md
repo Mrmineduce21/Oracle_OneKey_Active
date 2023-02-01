@@ -83,4 +83,14 @@ cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/Mrmineduc
 cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh release
 ```
 ============================================================
+
 OneKey_FuckMemory.sh
+  脚本将自动获取系统可用内存的10%（不满1G按1G算） 并消耗掉这部分内存
+  警告：Amd服务器（内存小于2G）请勿使用此脚本，对此照成的封号，机器失联，卡死等问题作者概不负责
+  
+  真--一键吃内存
+  
+  ```
+  cd /root && wget -qO OneKey_FuckMemory.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/OneKey_FuckMemory.sh && chmod +x OneKey_FuckMemory.sh && bash OneKey_FuckMemory.sh
+  ```
+  

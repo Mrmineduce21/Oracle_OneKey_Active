@@ -7,6 +7,7 @@ plain='\033[0m'
 
 cur_dir=$(pwd)
 
+check() {
 # check root
 [[ $EUID -ne 0 ]] && echo -e "${red}错误：${plain} 必须使用root用户运行此脚本！\n" && exit 1
 
@@ -28,6 +29,7 @@ elif cat /proc/version | grep -Eqi "centos|red hat|redhat"; then
 else
     echo -e "${red}未检测到系统版本，请联系脚本作者！${plain}\n" && exit 1
 fi
+}
 
 #main
 
@@ -66,8 +68,12 @@ install_base() {
 
 
 echo -e "${green}开始运行${plain}"
+check
+echo -e "${green}检查环境完成${plain}"
 install_base
+echo -e "${green}依赖安装完成${plain}"
 Fuck_OCPU
+
 
 
 

@@ -49,7 +49,7 @@ freeMem=$(free -t | awk 'NR ==2 {print $4/1024/1024/10}') && full=$((${freeMem//
    fullG=${full}$G
    echo -e "${green}当前获取到的可用内存为_${freeMem}GB ${plain}"
   
-   echo -e "${green}预计填充的内存为_ ${fullG} ${plain}"
+   echo -e "${green}预计填充的内存为_${fullG} ${plain}"
   
    echo -e "${green}===============================${plain} "
    echo -e "${yellow}  脚本将自动获取系统可用内存的10%（不满1G按1G算） 并消耗掉这部分内存 ${plain} "
@@ -66,7 +66,7 @@ fi
 #运行部分
 if [ -f /root/memory_usage.sh ]; then
  echo "file found...开始执行 吃掉内存"
-  bash memory_usage.sh ${full}G
+  bash memory_usage.sh ${fullG}
   else
   echo "no such file!-开始下载"
 cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh consume ${fullG}

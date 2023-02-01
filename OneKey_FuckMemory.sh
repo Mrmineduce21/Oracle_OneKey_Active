@@ -66,10 +66,10 @@ fi
 #运行部分
 if [ -f /root/memory_usage.sh ]; then
  echo "file found...开始执行 吃掉内存"
-  bash memory_usage.sh consume${fullG}
+cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh consume${fullG}
   else
   echo "no such file!-开始下载"
-cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh consume${fullG}
+cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh consume ${fullG}
 fi
 
 }

@@ -8,6 +8,15 @@
 
 ================================================================
 
+OneKeyFuck_OCPU.sh
+
+一键吃掉CPU（可精准控制）
+```
+cd /root && wget -qO OneKeyFuck_OCPU.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/OneKeyFuck_OCPU.sh && chmod +x OneKeyFuck_OCPU.sh && bash OneKeyFuck_OCPU.sh
+```
+
+================================================================
+
 memory_usage.sh
 使用方法： 需要root 权限 启动
 

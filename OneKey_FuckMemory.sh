@@ -45,7 +45,7 @@ install_base() {
 
 
 Fuck_Memory() {
-freeMem=$(free -t | awk 'NR ==2 {print $4/1024/1024/10}')
+freeMem=$(free -t | awk 'NR ==2 {print $4/1024/1024}')
 TCMem=$(free -t | awk 'NR ==2 {print $4/1024/1024/10}') && full=$((${TCMem//.*/+1})) 
    fullG=${full}$G
    echo -e "${green}当前获取到的可用内存为_${freeMem}GB ${plain}"

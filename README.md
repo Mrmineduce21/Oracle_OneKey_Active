@@ -8,7 +8,7 @@
 
 转载请标明原出处
 
-============================   C   P   U   ====================================
+----============================   C   P   U   ===============================----
 
 OneKeyFuck_OCPU.sh
 
@@ -25,7 +25,7 @@ pid=$(ps -ef | grep "bash" | grep '/bin/bash' | grep -v grep | awk '{print $2}')
 
 当ssh终端出现  nohup: appending output to 'nohup.out'  时按回车即可
 
-================================================================
+============================================================
 
 cpu_usage.sh(无法做到精确控制占用)
 
@@ -49,7 +49,7 @@ cd /root && wget -qO cpu_usage.sh https://raw.githubusercontent.com/Mrmineduce21
 需要构造消耗2颗cpu的资源运行脚本sh cpu_usage.sh consume 2，此时运行top命令查看cpu的使用率。如果要释放cpu资源
 运行sh cpu_usage.sh release即可释放cpu资源。
 
-================================================================
+============================================================
 
 Fuck_OCPU.sh（第一个脚本的手动版本）
 
@@ -58,7 +58,7 @@ Fuck_OCPU.sh（第一个脚本的手动版本）
 需要自行安装CPUlimit
 
 
-================   M   e   m   o   r  y   ======================
+----===================   M   e   m   o   r  y   =========================----
 
 memory_usage.sh
 使用方法： 需要root 权限 启动
@@ -82,4 +82,5 @@ cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/Mrmineduc
 ```
 cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh release
 ```
-================================================================
+============================================================
+OneKey_FuckMemory.sh

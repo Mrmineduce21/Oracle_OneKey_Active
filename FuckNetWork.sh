@@ -33,23 +33,23 @@ else
     mkdir /root/anti-recycling
 fi
 #Check file and download
-if [ -f /root/anti-recycling/vultr.com.1000MB.bin ]; then
+if [ -f /root/anti-recycling/100mb.test ]; then
 echo -e " ${green} 自动清除上次残留 ${plain} "
-rm -f /root/anti-recycling/vultr.com.1000MB.bin
+rm -f /root/anti-recycling/100mb.test
   else
   echo -e " ${green} 无残留，开始跑网络 ${plain} "
 fi
 time=$(date "+%Y-%m-%d %H:%M:%S")
 echo "${time} Start Download " >> /root/Oracle_OneKey_Active.log
 
-wget --limit-rate=10M  https://nj-us-ping.vultr.com/vultr.com.1000MB.bin  -O /root/anti-recycling/vultr.com.1000MB.bin
+wget --limit-rate=8M  http://cachefly.cachefly.net/100mb.test  -O /root/anti-recycling/100mb.test
 
 clear
 rm -f /root/nohup.out
-echo -e " ${green} 下载完成，等待1680S(28Min)继续运行 ${plain} "
+echo -e " ${green} 下载完成，等待168S(2.8Min)继续运行 ${plain} "
 time=$(date "+%Y-%m-%d %H:%M:%S")
 echo "${time} start wait " >> /root/Oracle_OneKey_Active.log
-sleep 1680
+sleep 168
 time=$(date "+%Y-%m-%d %H:%M:%S")
 echo "${time} ==================== " >> /root/Oracle_OneKey_Active.log    
 

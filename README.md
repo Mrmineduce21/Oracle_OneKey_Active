@@ -10,6 +10,25 @@
 
 以下三个脚本都是执行后  在后台静默运行，脚本不会开机自启动，请重启后手动运行脚本
 
+
+----========================   更   新   内   容   ============================----
+
+将FuckNetWork.sh 下载源替换为
+
+```
+http://cachefly.cachefly.net/100mb.test
+```
+
+测序间隔修改为半小时一次
+
+删除旧版本残留文件
+
+```
+sudo rm -f /root/nohup.out && rm -f /root/Oracle_OneKey_Active.log && rm -f /root/anti-recycling/vultr.com.1000MB.bin && rm -f /root/anti-recycling/vultr.com.1000MB.bin.1
+```
+
+
+
 ----============================   C   P   U   ===============================----
 
 OneKeyFuck_OCPU.sh
@@ -112,7 +131,7 @@ cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/Mrmineduc
 
 FuckNetWork.sh
 
-原理：每间隔二十分钟下载一次大小为1G的 VULTR 测速文件（限速10MB/S） 下次下载开始前将会删除上次下载的文件
+原理：每间隔2.8分钟下载一次大小为100MB的 测速文件（限速8MB/S） 下次下载开始前将会删除上次下载的文件
 
 一键浪费网络
 ```
@@ -120,7 +139,7 @@ cd /root && wget -qO FuckNetWork.sh https://raw.githubusercontent.com/Mrmineduce
 ```
 停止运行
 ```
-FNpid=$(ps -ef | grep "FuckNetWork.sh" | grep '/bin/bash' | grep -v grep | awk '{print $2}') && kill -9 $FNpid && rm -f /root/nohup.out
+FNpid=$(ps -ef | grep "FuckNetWork.sh" | grep '/bin/bash' | grep -v grep | awk '{print $2}') && kill -9 $FNpid && rm -f /root/nohup.out && rm -f /root/Oracle_OneKey_Active.log
 ```
 
 建议手动添加定时任务

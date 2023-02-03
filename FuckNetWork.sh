@@ -42,7 +42,7 @@ fi
 time=$(date "+%Y-%m-%d %H:%M:%S")
 echo "${time} Start Download " >> /root/Oracle_OneKey_Active.log
 
-wget --limit-rate=8M  http://cachefly.cachefly.net/100mb.test  -O /root/anti-recycling/100mb.test
+wget --limit-rate=8M  http://speedtest.fremont.linode.com/100MB-fremont.bin  -O /root/anti-recycling/100mb.test
 
 clear
 rm -f /root/nohup.out

@@ -16,7 +16,7 @@
 将FuckNetWork.sh 下载源替换为
 
 ```
-http://cachefly.cachefly.net/100mb.test
+http://speedtest.fremont.linode.com/100MB-fremont.bin
 ```
 
 测序间隔修改为半小时一次

@@ -19,7 +19,9 @@
 http://speedtest.fremont.linode.com/100MB-fremont.bin
 ```
 
-测序间隔修改为半小时一次
+下载间隔修改为2.8小时一次
+
+
 
 删除旧版本残留文件
 

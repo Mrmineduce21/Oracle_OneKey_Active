@@ -123,6 +123,10 @@ cd /root && wget -qO FuckNetWork.sh https://raw.githubusercontent.com/Mrmineduce
 FNpid=$(ps -ef | grep "FuckNetWork.sh" | grep '/bin/bash' | grep -v grep | awk '{print $2}') && kill -9 $FNpid && rm -f /root/nohup.out
 ```
 
+建议手动添加定时任务
+```
+FNpid=$(ps -ef | grep "FuckNetWork.sh" | grep '/bin/bash' | grep -v grep | awk '{print $2}') && kill -9 $FNpid && rm -f /root/nohup.out && rm -f /root/Oracle_OneKey_Active.log && cd /root && wget -qO FuckNetWork.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/FuckNetWork.sh && chmod +x FuckNetWork.sh && nohup ./FuckNetWork.sh &
+```
 
 
   

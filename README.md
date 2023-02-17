@@ -24,7 +24,7 @@
 http://speedtest.fremont.linode.com/100MB-fremont.bin
 ```
 
-下载间隔修改为2.8小时一次
+下载间隔修改为2.8分钟一次
 
 
 

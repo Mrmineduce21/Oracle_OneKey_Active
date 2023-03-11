@@ -34,14 +34,14 @@ fi
 #main
 
 Fuck_OCPU() {
-echo -e "${yellow}请输入CPU核心数量【可选1-4  Oracle amd机型为2核心】${plain} "
-read -p "请输入: " -t 30 NO_Cores
-if [[ ! -z "${NO_Cores}" ]]; then
-Cores="${NO_Cores}"
-fi
+Cores=$(cat /proc/cpuinfo| grep "processor"| wc -l )
+
   echo -e "${green} ${Cores}Cores${plain} "
   echo -e "${green}==========================${plain} "
-if [ -f /root/Fuck_OCPU.sh ]; then
+
+ echo "等待5S"
+sleep 5
+   if [ -f /root/Fuck_OCPU.sh ]; then
  echo "file found...开始执行 吃掉CPU"
   bash Fuck_OCPU.sh ${Cores}
   else
@@ -50,7 +50,6 @@ if [ -f /root/Fuck_OCPU.sh ]; then
 cd /root && wget -qO Fuck_OCPU.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/Fuck_OCPU.sh && chmod +X Fuck_OCPU.sh && bash Fuck_OCPU.sh ${Cores}
   
 fi
-
 
 
 

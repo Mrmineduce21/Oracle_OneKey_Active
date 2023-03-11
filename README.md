@@ -13,27 +13,7 @@
 
 ----========================   更   新   内   容   ============================----
 
-经过一段时间的实践发现，不跑网络也不回收，随意只要跑CPU和内存
-经过一段时间的实践发现，不跑网络也不回收，随意只要跑CPU和内存
-经过一段时间的实践发现，不跑网络也不回收，随意只要跑CPU和内存
-
-
-将FuckNetWork.sh 下载源替换为
-
-```
-http://speedtest.fremont.linode.com/100MB-fremont.bin
-```
-
-下载间隔修改为2.8分钟一次
-
-
-
-删除旧版本残留文件
-
-```
-sudo rm -f /root/nohup.out && rm -f /root/Oracle_OneKey_Active.log && rm -f /root/anti-recycling/vultr.com.1000MB.bin && rm -f /root/anti-recycling/vultr.com.1000MB.bin.1
-```
-
+更新全自动  吃掉CPU
 
 
 ----============================   C   P   U   ===============================----
@@ -77,13 +57,7 @@ cd /root && wget -qO cpu_usage.sh https://raw.githubusercontent.com/Mrmineduce21
 需要构造消耗2颗cpu的资源运行脚本sh cpu_usage.sh consume 2，此时运行top命令查看cpu的使用率。如果要释放cpu资源
 运行sh cpu_usage.sh release即可释放cpu资源。
 
-============================================================
 
-Fuck_OCPU.sh（第一个脚本的手动版本）
-
-运行方法  bash Fuck_OCPU.sh <cores> 
-
-需要自行安装CPUlimit
 
 
 ----===================   M   e   m   o   r  y   =========================----
@@ -134,25 +108,6 @@ cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/Mrmineduc
 cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh release
 ```
 
-----==================   N   E   T   W   O   R   K   =======================----
-
-FuckNetWork.sh
-
-原理：每间隔2.8分钟下载一次大小为100MB的 测速文件（限速8MB/S） 下次下载开始前将会删除上次下载的文件
-
-一键浪费网络
-```
-cd /root && wget -qO FuckNetWork.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/FuckNetWork.sh && chmod +x FuckNetWork.sh && nohup ./FuckNetWork.sh &
-```
-停止运行
-```
-FNpid=$(ps -ef | grep "FuckNetWork.sh" | grep '/bin/bash' | grep -v grep | awk '{print $2}') && kill -9 $FNpid && rm -f /root/nohup.out && rm -f /root/Oracle_OneKey_Active.log
-```
-
-建议手动添加定时任务
-```
-FNpid=$(ps -ef | grep "FuckNetWork.sh" | grep '/bin/bash' | grep -v grep | awk '{print $2}') && kill -9 $FNpid && rm -f /root/nohup.out && rm -f /root/Oracle_OneKey_Active.log && cd /root && wget -qO FuckNetWork.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/FuckNetWork.sh && chmod +x FuckNetWork.sh && nohup ./FuckNetWork.sh &
-```
 
 
   

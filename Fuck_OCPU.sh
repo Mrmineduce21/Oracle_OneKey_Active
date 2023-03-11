@@ -2,12 +2,7 @@
 
 
 
-
-read -p "请输入期望的CPU占用率: " -t 30 Occupancy_rate
-if [[ ! -z "${Occupancy_rate}" ]]; then
-rate="$Occupancy_rate}"
-fi
-utilization=$rate
+utilization=14
 
 
 endless_loop()

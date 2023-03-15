@@ -64,8 +64,8 @@ install_base() {
         sudo yum update
         yum install cpulimit wget socat -y
     else
-    sudo apt-get update
-    apt-get install cpulimit wget socat -y
+sudo apt-get update
+    sudo apt-get install cpulimit wget socat -y
     fi
 }
 
